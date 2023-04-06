@@ -1,7 +1,8 @@
-import express, { Request, Response } from 'express'
-const app =  express()
+import * as express from 'express'
+const exp = require('express')
+const app =  exp()
 
-app.get("/",(req:Request,res:Response)=>{
+app.get("/",(req:any,res:any)=>{
     try {
         return res.status(200).send({
             users:[
